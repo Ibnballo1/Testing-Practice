@@ -1,6 +1,10 @@
 function stringLength(string) {
-    return string.length;
+    if (string.length > 0 && string.length <= 10) {
+        return string.length;
+    } else {
+        return 'Error';
+    }
 }
 
 module.exports = stringLength;
-//console.log(stringLength('The Boy is sleeping'));
+//console.log(stringLength('This boy'));
