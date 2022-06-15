@@ -18,10 +18,10 @@ describe('Check the addition of numbers', () => {
 describe('Check the subtraction of numbers', () => {
     test('a - b should be positive', () => {
         const negative = calculator.subtract(7, 5);
-        expect(negative).toBe(22);
+        expect(negative).toBe(2);
     });
     test('a - b should be negative', () => {
-        const negative = calculator.subtract(13, -9);
+        const negative = calculator.subtract(13, 17);
         expect(negative).toBe(-4);
     });
     test('b - a should be positive', () => {
@@ -54,8 +54,8 @@ describe('Check the division of numbers', () => {
         const rmv = calculator.divide(27, -9);
         expect(rmv).toBe(-3);
     });
-    test('a / b should be zero', () => {
+    test('a / b should be infinity', () => {
         const rmv = calculator.divide(12, 0);
-        expect(rmv).toBe(0);
+        expect(rmv).toBe(Infinity);
     });
 })
